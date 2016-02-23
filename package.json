@@ -1,0 +1,17 @@
+{
+  "name": "babel-plugin-recognizer",
+  "version": "0.0.1",
+  "description": "Instrument your code",
+  "repository": "https://github.com/equiet/babel-plugin-recognizer.git",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "babel-plugin",
+    "recognizer"
+  ],
+  "dependencies": {
+    "babel-runtime": "^5.0.0",
+    "babel-traverse": "^6.5.0",
+    "babylon": "^6.5.2"
+  }
+}
