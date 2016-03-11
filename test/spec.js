@@ -50,4 +50,13 @@ describe('babel-plugin-recognizer', function() {
         console.log(output.code)
     })
 
+
+    it('should NOT instrument short-hand arrow functions', function() {
+        let code = `
+            var abc = () => true;
+        `
+        let output = babel.transform(code, transformOptions)
+        console.log(output.code)
+    })
+
 })
