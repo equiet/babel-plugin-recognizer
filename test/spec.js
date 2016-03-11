@@ -42,4 +42,12 @@ describe('babel-plugin-recognizer', function() {
         console.log(output.code)
     })
 
+    it('should instrument arrow functions', function() {
+        let code = `
+            var abc = () => { return true; };
+        `
+        let output = babel.transform(code, transformOptions)
+        console.log(output.code)
+    })
+
 })
