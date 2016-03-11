@@ -1,10 +1,13 @@
 {
   "name": "babel-plugin-recognizer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Instrument your code",
   "repository": "https://github.com/equiet/babel-plugin-recognizer.git",
   "license": "MIT",
   "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
   "keywords": [
     "babel-plugin",
     "recognizer"
@@ -13,5 +16,10 @@
     "babel-runtime": "^5.0.0",
     "babel-traverse": "^6.5.0",
     "babylon": "^6.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babylon": "^6.7.0",
+    "mocha": "^2.4.5"
   }
 }
