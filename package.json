@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-recognizer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Instrument your code",
   "repository": "https://github.com/equiet/babel-plugin-recognizer.git",
   "license": "MIT",
