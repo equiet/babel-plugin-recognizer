@@ -50,10 +50,43 @@ describe('babel-plugin-recognizer', function() {
         console.log(output.code)
     })
 
-
     it('should NOT instrument short-hand arrow functions', function() {
         let code = `
             var abc = () => true;
+        `
+        let output = babel.transform(code, transformOptions)
+        console.log(output.code)
+    })
+
+    it('should instrument simple IfStatement', function() {
+        let code = `
+            if (true) {
+                a = true;
+            }
+        `
+        let output = babel.transform(code, transformOptions)
+        console.log(output.code)
+    })
+
+    it('should instrument IfStatement', function() {
+        let code = `
+            if (true) {
+                a = true;
+            } else {
+                b = false;
+            }
+        `
+        let output = babel.transform(code, transformOptions)
+        console.log(output.code)
+    })
+
+    it('should instrument TryStatement', function() {
+        let code = `
+            try {
+                a = true;
+            } catch (e) {
+                b = false;
+            }
         `
         let output = babel.transform(code, transformOptions)
         console.log(output.code)
